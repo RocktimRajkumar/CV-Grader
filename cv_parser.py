@@ -36,7 +36,17 @@ def extract_mobile_number(text):
         else:
             return number
 
+
+def extract_email(email):
+    email = re.findall("([^@|\s]+@[^@]+\.[^@|\s]+)", email)
+    if email:
+        try:
+            return email[0].split()[0].strip(';')
+        except IndexError:
+            return None
+
 cv_text = pdf2text.get_Text("./resumes/Resume.pdf")
 
 print(extract_name(cv_text))
 print(extract_mobile_number(cv_text))
+print(extract_email(cv_text))
