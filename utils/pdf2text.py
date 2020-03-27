@@ -41,9 +41,9 @@ def extract_text_from_pdf(pdf_path):
             fake_file_handle.close()
 
 
-text = ""
-# calling above function and extracting text
-for page in extract_text_from_pdf("./resumes/invoice.pdf"):
-    text += ' ' + page
-
-print(text)
+def get_Text(filePath):
+    text = ""
+    # calling above function and extracting text
+    for page in extract_text_from_pdf(filePath):
+        text += ' ' + page
+    return text
