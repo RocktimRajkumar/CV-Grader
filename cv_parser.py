@@ -52,8 +52,8 @@ def extract_email(email):
 def check_skills(word, skills_data):
 
     for skill in skills_data:
-        if str(skill).lower() == str(word).lower():
-            return skill
+        if str(word).lower() == str(skill).lower():
+            return str(skill)
     return False
 
 
@@ -68,16 +68,15 @@ def extract_skills(resume_text):
     # extract values
     skills_data = data[0].tolist()
 
-    words = []
-    for word in nlp_text.noun_chunks:
-        words.append(str(word))
-
-    words.extend(tokens)
-
     pool = mp.Pool(mp.cpu_count())
-    
+
     skills = [pool.apply_async(check_skills, args=(
-        word, skills_data)) for word in words]
+        str(word), skills_data))for word in nlp_text.noun_chunks]
+
+    token_skills = [pool.apply_async(check_skills, args=(
+        str(word), skills_data)) for word in tokens]
+
+    skills.extend(token_skills)
 
     skills = [p.get() for p in skills if p.get() is not False]
 

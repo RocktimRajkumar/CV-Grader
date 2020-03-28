@@ -1435,6 +1435,7 @@ Angioplasty
 Angular
 AngularFire
 AngularJS
+Angular JS
 Animal Behavior
 Animal Bites
 Animal Breeding
@@ -13851,7 +13852,7 @@ Gigs
 Gilding
 Gilts
 Gin
-Git
+GIT
 GitLab
 Github
 Glaciology
@@ -35589,7 +35590,6 @@ Weather Forecasting
 Weather Radar
 Weatherization
 Weaving
-Web
 Web & Mobile
 Web + Interactive
 Web 2.0
@@ -36671,7 +36671,7 @@ asciimatics
 python-fire
 python-prompt-toolkit
 aws-cli
-api gw
+API GW
 bashplotlib
 caniusepython3
 cookiecutter
@@ -36807,8 +36807,6 @@ alipay
 cartridge
 django-oscar
 django-shop
-merchant
-money
 python-currencies
 forex-python
 shoop
@@ -37199,7 +37197,7 @@ python-goose
 python-readability
 sanitize
 sumy
-textract
+Textract
 cola
 demiurge
 feedparser
@@ -37240,8 +37238,8 @@ octave
 machine learning
 data analytics
 predictive analytics
-html
-js
+HTML
+JS
 accounts payable
 receivables
 inventory controls
@@ -37319,17 +37317,11 @@ jsp
 marketing
 strategy
 research
-analytical
-engineering
-policies
-budget
 finance
 project management
 health
 customer service
-content
 presentation
-brand
 presentations
 safety
 certification
@@ -37595,12 +37587,8 @@ psychology
 marketing materials
 resource management
 physics
-mortgage
 development activities
-end user
 business planning
-root cause
-analysis
 leadership development
 relationship building
 sdlc
